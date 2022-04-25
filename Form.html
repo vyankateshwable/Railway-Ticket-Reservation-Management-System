@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Form_style.css">
+    <link rel="icon"
+        href="https://www.clipartkey.com/mpngs/m/257-2575628_microsoft-forms-icon-microsoft-forms-logo-png.png">
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form action="/formsubmitted.html" name="myform" onsubmit="return validateForm()" method="get">
+        <div class="formdesign" id="ffname">
+            <label><b>First Name:</b></label><br>
+            <input type="text" name="fname" placeholder="Enter first name"><b><span class="formerror"
+                    required></span></b>
+        </div>
+        <div class="formdesign" id="flname">
+            <lable><b>Last Name:</b></lable><br>
+            <input type="text" name="lname" placeholder="Enter last name"><b><span class="formerror"
+                    required></span></b>
+        </div>
+        <div class="formdesign" id="femail">
+            <lable><b>Email:</b></lable><br>
+            <input type="email" name="email" placeholder="Enter your email"><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="fusername">
+            <lable><b>Username:</b></lable><br>
+            <input type="text" name="username" placeholder="Enter username"><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="fpassword">
+            <lable><b>Password:</b></lable><br>
+            <input type="password" name="password" placeholder="Enter password"><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="fcpassword">
+            <label><b>Confirm Password:</b></label><br>
+            <input type="password" name="cpassword" placeholder="Confirm your password"><b><span
+                    class="formerror"></span></b>
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+        <input class="btnreset" type="reset" value="Reset" onclick="window.location.reload()">
+    </form>
+</body>
+<script src="Form.js"> </script>
+
+</html>
